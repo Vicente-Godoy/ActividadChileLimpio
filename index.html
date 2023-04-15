@@ -5,10 +5,16 @@
     <title>Form Validation</title>
 <style>
     label{
-        display: block;
-        float: left;
-        width: 70px;
+        display:block;
+        float: center;
+        height: 25px;
+        width: 180  px;
 
+    }
+    textarea{
+        display: block;
+        float: center;
+    
     }
 </style>    
 </head>
@@ -33,31 +39,40 @@
     </div>
     <div>
         <label for="fecnac">Fecha de Nacimiento</label>
-        <input type="text" id='fecnac'>
+        <input type="date" id='fecnac'>
     </div>
     <div>
-        <label for="edad">Edad</label>
-        <input type="text" id='edad'>
-    </div><div>
-        <label for="genero">Género</label>
-        <input type="text" id='genero'>
-    </div><div>
+        <label for="edad" min="18" max="35">Edad</label>
+        <input type="number" id='edad'>
+    </div>
+    <div class="form-group"> 
+        <label>Género</label>
+        <select name="categoria" id="tipo" required>
+        <option value="" disabled selected>Seleccione género...</option>
+            <option value="genero">Hombre</option>
+            <option value="genero">Mujer</option>
+        </select>
+        </div>
+    <div>
         <label for="email">E-mail</label>
-        <input type="text" id='email'>
-    </div><div>
+        <input type="email" id='email'>
+    </div>
+    <div>
         <label for="fono">Celular</label>
-        <input type="text" id='fono'>
-    </div><div>
+        <input type="number" id='fono'>
+    </div>
+    <div>
         <label for="profesion">Profesión</label>
         <input type="text" id='profesion'>
     </div>
     <div>
         <label for="carta">Motivación</label>
-        <input type="text" id='carta'>
+        <textarea name="Motivación" id="carta" cols="60" rows="10"></textarea>
     </div>
-    <input type="submit" onclick= 'return enviarFormulario()'value='Enviar'>
+    <input type="submit" onclick= 'return enviarFormulario()'value='Crear Carta'>
 </form>
 <div id='error'></div>
 <script src='app.js'></script>
 </body>
 </html>
+

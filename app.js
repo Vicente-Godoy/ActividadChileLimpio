@@ -22,13 +22,41 @@ var form = document.getElementById('formulario');
         evt.preventDefault();
 
     var mensajesError = [];
-
-    if(nombre.value === null || nombre.value === '' ){
+    
+    if(rut.value === null || rut.value === '' || rut.value.length >= 9 || rut.value.length <=10){
+        mensajesError.push('Ingrese su Rut');
+    }    
+    if(appaterno.value === null || appaterno.value === '' || appaterno.value.length >= 3 || appaterno.value.length <= 20){
+        mensajesError.push('Debe ingresar su Apellido Paterno');
+    }    
+    if(apmaterno.value === null || apmaterno.value === '' || apmaterno.value.length >= 3 || apmaterno.value.length <= 20){
+        mensajesError.push('Debe ingresar su Apellido Materno');
+    }    
+    if(nombre.value === null || nombre.value === '' || nombre.value. length >= 3 || nombre.value.length <= 20){
+        mensajesError.push('Debe ingresar su Nombre');
+    }    
+    if(fecnac.value === null || fecnac.value === ''){
+        mensajesError.push('Debe ingresar su Fecha de Nacimiento');
+    }   
+    if(edad.value === null || edad.value === '' || edad.value.length >= 18 || edad.value.length <= 35){
+        mensajesError.push('Debe ingresar su Edad');
+    }    
+    if(genero.value === null || genero.value === '' ){
+        mensajesError.push('Debe seleccionar un género');
+    }    
+    if(email.value === null || email.value === '' ){
         mensajesError.push('Ingrese su Nombre');
+    }    
+    if(fono.value === null || fono.value === '' || fono.value.length >= 9 || fono.value.length <= 12){
+        mensajesError.push('Ingrese su Nombre');
+    }    
+    if(profesion.value === null || profesion.value === '' ){
+        mensajesError.push('Ingrese su Nombre');
+    }    
+    if(carta.value === null || carta.value === '' ){
+        mensajesError.push('Es necesario agregar una carta de presentación');
     }
-    if(password.value === null || password.value === '' ){
-        mensajesError.push('Ingrese su Password');
-    }
+
     error.innerHTML = mensajesError.join(', ');
 
     return false;
