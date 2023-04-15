@@ -1,5 +1,14 @@
+var rut = document.getElementById('rut');
+var appaterno = document.getElementById('appaterno');
+var apmaterno = document.getElementById('apmaterno');
 var nombre = document.getElementById('nombre');
-var password = document.getElementById('password');
+var fecnac = document.getElementById('fecnac');
+var edad = documet.getElementById('edad');
+var genero = document.getElementById('genero');
+var email = document.getElementById('email');
+var fono = document.getElementById('fono');
+var profesion = document.getElementById('profesion');
+var carta = document.getElementById('carta');
 var error = document.getElementById('error');
 error.style.color = 'red';
 
