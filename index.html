@@ -67,19 +67,25 @@
         <label for="email">E-mail</label>
         <input type="text" id='email'>
     </div>
+
+    <!-- Aquí se crea el label Fono -->
     <div>
         <label for="fono">Celular</label>
         <input type="text" id='fono' minlength="9" maxlength="12">
     </div>
+
+    <!-- Aquí se crea el label Profesión -->
     <div>
         <label for="profesion">Profesión</label>
         <input type="text" id='profesion'>
     </div>
+
+    <!-- Aquí se crea el label Motivación -->
     <div>
         <label for="carta">Motivación</label>
         <textarea name="Motivación" id="carta" cols="60" rows="10"></textarea>
     </div>
-    <input type="submit" onclick= 'return enviarFormulario()'value='Crear Carta'>
+    <input type="submit" value='Crear Carta'>
 </form>
 <div id='error'></div>
 <script src='app.js'></script>
