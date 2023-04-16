@@ -9,6 +9,7 @@ var email = document.getElementById('email');
 var fono = document.getElementById('fono');
 var profesion = document.getElementById('profesion');
 var carta = document.getElementById('carta');
+
 var error = document.getElementById('error');
 error.style.color = 'red';
 

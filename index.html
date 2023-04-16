@@ -9,57 +9,67 @@
         float: center;
         height: 25px;
         width: 180  px;
-
-    }
-    textarea{
-        display: block;
-        float: center;
-    
     }
 </style>    
 </head>
 <body>
     
 <form action="" id = 'formulario'>
+
+    <!-- Aquí se crea el label Rut -->
     <div>
         <label for="rut">Rut</label>
         <input type="text" id='rut'>
     </div>
+
+    <!-- Aquí se crea el label Appaterno -->
     <div>
         <label for="appaterno">Apellido Paterno</label>
         <input type="text" id='appaterno'>
     </div>
+
+    <!-- Aquí se crea el label  Apmaterno-->
     <div>
         <label for="apmaterno">Apellido Materno </label>
         <input type="text" id='apmaterno'>
     </div>
+
+    <!-- Aquí se crea el label Nombre -->
     <div>
         <label for="nombre">Nombre</label>
         <input type="text" id='nombre'>
     </div>
+
+    <!-- Aquí se crea el label de tipo DATE Fecha de Nacimiento-->
     <div>
         <label for="fecnac">Fecha de Nacimiento</label>
         <input type="date" id='fecnac'>
     </div>
+
+    <!-- Aquí se crea el label de tipo NUMBER Edad -->
     <div>
         <label for="edad" min="18" max="35">Edad</label>
-        <input type="number" id='edad'>
+        <input type="number" id='edad' min="18" max="35">
     </div>
-    <div class="form-group"> 
+
+    <!-- Aquí se crea el select Genero -->
+    <div> 
         <label>Género</label>
-        <select name="categoria" id="tipo" required>
+        <select name="genero" id="genero" required>
         <option value="" disabled selected>Seleccione género...</option>
-            <option value="genero">Hombre</option>
-            <option value="genero">Mujer</option>
+            <option>Hombre</option>
+            <option>Mujer</option>
         </select>
         </div>
+
+    <!-- Aquí se crea el label Email -->    
     <div>
         <label for="email">E-mail</label>
-        <input type="email" id='email'>
+        <input type="text" id='email'>
     </div>
     <div>
         <label for="fono">Celular</label>
-        <input type="number" id='fono'>
+        <input type="text" id='fono'>
     </div>
     <div>
         <label for="profesion">Profesión</label>
